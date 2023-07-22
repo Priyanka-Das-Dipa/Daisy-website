@@ -4,18 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daisy-ui-website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- for font family -->
+    <style>
+        .font-manpore{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <!-- for color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color' : ' var(--linear, linear-gradient(270deg, #F00 0%, #FF8938 100%))'
+              }
+            }
+          }
+        }
+      </script>
 
 </head>
-<body>
+<body class="font-manpore">
     <!-- Header Section -->
     <header>
-        <!-- navigation bar -->
-        <nav>
-            
-        </nav>
         <!-- banner section -->
-        <section>
-
+        <section class="max-w-screen-xl mx-auto my-10 px-5">
+            <div class="flex gap-3">
+                <!-- banner left contant -->
+                <div class="space-y-4">
+                    <h3 class="font-manpore font-extrabold text-7xl">It's good <br> tea time at The <br>Tea House</h3>
+                    <p class="font-medium text-lg font-manpore">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
+                    <button class="btn bg-gradient-to-r from-#ff0000 to-#FF8938 px-5 py-3 text-xl font-bold font-manpore inline">Explore More</button>
+                </div>
+                <!-- banner right image -->
+                <div class="pt-4">
+                    <img src="images/banner.png" alt="">
+                </div>
+            </div>
         </section>
     </header>
     <!-- main section -->
